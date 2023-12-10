@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ClothesShop
+namespace ClothesShop.Character.Utils
 {
     public static class Vector2Extensions
     {

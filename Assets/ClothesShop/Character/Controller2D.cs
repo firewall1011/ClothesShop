@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace ClothesShop
+namespace ClothesShop.Character
 {
     public abstract class Controller2D : MonoBehaviour
     {

@@ -1,8 +1,8 @@
+using ClothesShop.Input;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using ClothesShop.Input;
 
-namespace ClothesShop
+namespace ClothesShop.Character
 {
     public class PlayerController2D : Controller2D, PlayerInputActions.IInWorldActions
     {

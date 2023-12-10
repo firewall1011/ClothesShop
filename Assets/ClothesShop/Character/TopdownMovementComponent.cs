@@ -1,6 +1,7 @@
+using ClothesShop.Character.Utils;
 using UnityEngine;
 
-namespace ClothesShop
+namespace ClothesShop.Character
 {
     public class TopdownMovementComponent : MonoBehaviour
     {
@@ -20,44 +21,50 @@ namespace ClothesShop
             _lastMoveIntent = CardinalDirection.None;
             _lerpAmount = 0f;
         }
-
-        private void OnDisable()
+        
+        private void OnDisable() => _controller.OnMoveCommand -= ReceiveMoveIntent;
+        
+        private void Update()
         {
-            _controller.OnMoveCommand -= ReceiveMoveIntent;
+            if (!IsMoving())
+                return;
+
+            MoveToTargetPosition();
         }
+
 
         private void ReceiveMoveIntent(Vector2 moveDirection)
         {
             var cardinalDirection = moveDirection.ToCardinalDirection();
             _lastMoveIntent = cardinalDirection;
             
-            if (_gridPosition != _targetPos)
+            if (IsMoving())
                 return;
             
             UpdateTargetPosition();
         }
-
+        
         private void UpdateTargetPosition()
         {
             _targetPos = GetTargetPosition();
             _lerpAmount = 0f;
         }
-
-        private void Update()
+        
+        private Vector2Int GetTargetPosition() => (_gridPosition + _lastMoveIntent.ToVector2()).RoundToInt();
+        
+        private bool IsMoving() => _gridPosition != _targetPos;
+        
+        private void MoveToTargetPosition()
         {
-            if (_gridPosition == _targetPos)
-                return;
+            const float minDistance = 0.0001f;
+            var hasReachedTarget = Vector2.Distance(_rigidbody.position, _targetPos) <= minDistance;
             
-            const float minDistance = 0.001f;
-
-            if (Vector2.Distance(_rigidbody.position, _targetPos) <= minDistance)
+            if (hasReachedTarget)
             {
                 _gridPosition = _targetPos;
                 
-                if (_lastMoveIntent != CardinalDirection.None)
-                {
+                if (_lastMoveIntent != CardinalDirection.None) 
                     UpdateTargetPosition();
-                }
             }
             else
             {
@@ -66,7 +73,5 @@ namespace ClothesShop
                 _rigidbody.MovePosition(finalPos);
             }
         }
-
-        private Vector2Int GetTargetPosition() => (_gridPosition + _lastMoveIntent.ToVector2()).RoundToInt();
     }
 }
