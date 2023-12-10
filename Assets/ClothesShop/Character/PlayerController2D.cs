@@ -20,6 +20,7 @@ namespace ClothesShop
         public void OnMove(InputAction.CallbackContext context)
         {
             _currentMoveDirection = context.ReadValue<Vector2>();
+            InvokeMoveCommand(_currentMoveDirection);
         }
 
         public override Vector2 GetMoveDirection() => _currentMoveDirection;
