@@ -8,7 +8,7 @@ namespace ClothesShop.Shop
     {
         [SerializeField] private TextMeshProUGUI _itemNameText; 
         [SerializeField] private TextMeshProUGUI _itemPriceText; 
-        [SerializeField] private SpriteRenderer _itemSpriteRenderer;
+        [SerializeField] private Image _itemRenderer;
         [SerializeField] private Button _buyButton;
 
         private InventoryComponent _client;
@@ -18,7 +18,7 @@ namespace ClothesShop.Shop
         {
             _itemNameText.SetText(item.DisplayName);
             _itemPriceText.SetText(item.Price.Amount.ToString("C0"));
-            _itemSpriteRenderer.sprite = item.DisplaySprite;
+            _itemRenderer.sprite = item.DisplaySprite;
 
             _item = item;
         }
@@ -37,8 +37,11 @@ namespace ClothesShop.Shop
 
         private void RemoveClient()
         {
-            _client.Data.OnInventoryUpdated -= UpdateButton;
-            _buyButton.onClick.RemoveListener(TryBuyItem);
+            if (_client)
+            {
+                _client.Data.OnInventoryUpdated -= UpdateButton;
+                _buyButton.onClick.RemoveListener(TryBuyItem);
+            }
         }
 
         private void OnDestroy()

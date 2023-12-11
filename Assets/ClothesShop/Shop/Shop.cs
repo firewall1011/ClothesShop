@@ -13,8 +13,8 @@ namespace ClothesShop.Shop
         public void Open(InventoryComponent clientInventory)
         {
             _shopInstance = Instantiate(_shopUIPrefab);
-            _shopInstance.Open(_inventory);
             _shopInstance.SetClient(clientInventory);
+            _shopInstance.Open(_inventory);
         }
 
         public void Close()
