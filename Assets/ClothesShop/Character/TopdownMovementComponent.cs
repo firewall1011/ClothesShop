@@ -1,3 +1,4 @@
+using System;
 using ClothesShop.Character.Utils;
 using UnityEngine;
 
@@ -5,6 +6,9 @@ namespace ClothesShop.Character
 {
     public class TopdownMovementComponent : MonoBehaviour
     {
+        public event Action<CardinalDirection> OnMovementStart = delegate {  };
+        public event Action OnMovementStop = delegate {  };
+        
         [SerializeField] private float _speed;
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private Controller2D _controller;
@@ -14,6 +18,8 @@ namespace ClothesShop.Character
         private float _lerpAmount = 0f;
         
         private CardinalDirection _lastMoveIntent = CardinalDirection.None;
+        
+        public bool IsMoving() => _gridPosition != _targetPos;
         
         private void OnEnable()
         {
@@ -48,11 +54,10 @@ namespace ClothesShop.Character
         {
             _targetPos = GetTargetPosition();
             _lerpAmount = 0f;
+            OnMovementStart(_lastMoveIntent);
         }
         
         private Vector2Int GetTargetPosition() => (_gridPosition + _lastMoveIntent.ToVector2()).RoundToInt();
-        
-        private bool IsMoving() => _gridPosition != _targetPos;
         
         private void MoveToTargetPosition()
         {
@@ -65,6 +70,8 @@ namespace ClothesShop.Character
                 
                 if (_lastMoveIntent != CardinalDirection.None) 
                     UpdateTargetPosition();
+                else
+                    OnMovementStop();
             }
             else
             {
