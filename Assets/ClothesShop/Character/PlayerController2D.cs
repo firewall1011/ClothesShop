@@ -8,6 +8,7 @@ namespace ClothesShop.Character
     {
         private Vector2 _currentMoveDirection;
         private PlayerInputActions _playerInputActions;
+        
         private void Awake()
         {
             _playerInputActions = new PlayerInputActions();
@@ -21,6 +22,12 @@ namespace ClothesShop.Character
         {
             _currentMoveDirection = context.ReadValue<Vector2>();
             InvokeMoveCommand(_currentMoveDirection);
+        }
+
+        public void OnInteract(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+                InvokeInteractionCommand();
         }
 
         public override Vector2 GetMoveDirection() => _currentMoveDirection;

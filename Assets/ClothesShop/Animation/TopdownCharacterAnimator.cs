@@ -11,31 +11,23 @@ namespace ClothesShop.Animation
         [SerializeField, Min(1)] private int _framesPerAnimation;
         
         private float _elapsedTime;
-        private CardinalDirection _currentDirection;
 
         private int GetFrameIndex(float timeElapsed) => (int) ((timeElapsed * _frameRate) % _framesPerAnimation);
         
         private void OnEnable()
         {
-            _movementComponent.OnMovementStart += OnMovementStart;
             _movementComponent.OnMovementStop += OnMovementStop;
         }
         
         private void OnDisable()
         {
-            _movementComponent.OnMovementStart -= OnMovementStart;
             _movementComponent.OnMovementStop -= OnMovementStop;
         }
 
         private void OnMovementStop()
         {
-            _renderer.UpdateToIdle(_currentDirection);
+            _renderer.UpdateToIdle(_movementComponent.CurrentLookDirection);
             _elapsedTime = 0f;
-        }
-
-        private void OnMovementStart(CardinalDirection direction)
-        {
-            _currentDirection = direction;
         }
 
         private void Update()
@@ -49,7 +41,7 @@ namespace ClothesShop.Animation
         private void UpdateAnimation()
         {
             var frameIndex = GetFrameIndex(_elapsedTime);
-            _renderer.UpdateSprite(_currentDirection, frameIndex);
+            _renderer.UpdateSprite(_movementComponent.CurrentLookDirection, frameIndex);
             _elapsedTime += Time.deltaTime;
         }
     }

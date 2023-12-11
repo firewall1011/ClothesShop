@@ -37,6 +37,15 @@ namespace ClothesShop.Input
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""a4956340-0db1-4e88-9d13-3d2683f38285"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -116,6 +125,28 @@ namespace ClothesShop.Input
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9c43b482-0db3-4f73-889e-e34fb242021f"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""efd27a8f-02e0-44b8-be71-0de3329192dc"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -136,6 +167,7 @@ namespace ClothesShop.Input
             // InWorld
             m_InWorld = asset.FindActionMap("InWorld", throwIfNotFound: true);
             m_InWorld_Move = m_InWorld.FindAction("Move", throwIfNotFound: true);
+            m_InWorld_Interact = m_InWorld.FindAction("Interact", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -196,11 +228,13 @@ namespace ClothesShop.Input
         private readonly InputActionMap m_InWorld;
         private IInWorldActions m_InWorldActionsCallbackInterface;
         private readonly InputAction m_InWorld_Move;
+        private readonly InputAction m_InWorld_Interact;
         public struct InWorldActions
         {
             private @PlayerInputActions m_Wrapper;
             public InWorldActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
             public InputAction @Move => m_Wrapper.m_InWorld_Move;
+            public InputAction @Interact => m_Wrapper.m_InWorld_Interact;
             public InputActionMap Get() { return m_Wrapper.m_InWorld; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -213,6 +247,9 @@ namespace ClothesShop.Input
                     @Move.started -= m_Wrapper.m_InWorldActionsCallbackInterface.OnMove;
                     @Move.performed -= m_Wrapper.m_InWorldActionsCallbackInterface.OnMove;
                     @Move.canceled -= m_Wrapper.m_InWorldActionsCallbackInterface.OnMove;
+                    @Interact.started -= m_Wrapper.m_InWorldActionsCallbackInterface.OnInteract;
+                    @Interact.performed -= m_Wrapper.m_InWorldActionsCallbackInterface.OnInteract;
+                    @Interact.canceled -= m_Wrapper.m_InWorldActionsCallbackInterface.OnInteract;
                 }
                 m_Wrapper.m_InWorldActionsCallbackInterface = instance;
                 if (instance != null)
@@ -220,6 +257,9 @@ namespace ClothesShop.Input
                     @Move.started += instance.OnMove;
                     @Move.performed += instance.OnMove;
                     @Move.canceled += instance.OnMove;
+                    @Interact.started += instance.OnInteract;
+                    @Interact.performed += instance.OnInteract;
+                    @Interact.canceled += instance.OnInteract;
                 }
             }
         }
@@ -245,6 +285,7 @@ namespace ClothesShop.Input
         public interface IInWorldActions
         {
             void OnMove(InputAction.CallbackContext context);
+            void OnInteract(InputAction.CallbackContext context);
         }
     }
 }
