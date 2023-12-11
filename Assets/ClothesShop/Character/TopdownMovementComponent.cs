@@ -66,7 +66,7 @@ namespace ClothesShop.Character
             var cardinalDirection = moveDirection.ToCardinalDirection();
             _lastMoveIntent = cardinalDirection;
             
-            if (IsMoving())
+            if (IsMoving() || _lastMoveIntent == CardinalDirection.None)
                 return;
             
             UpdateTargetPosition();
