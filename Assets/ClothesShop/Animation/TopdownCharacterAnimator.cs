@@ -17,11 +17,18 @@ namespace ClothesShop.Animation
         private void OnEnable()
         {
             _movementComponent.OnMovementStop += OnMovementStop;
+            _movementComponent.OnTurn += OnTurn;
         }
         
         private void OnDisable()
         {
             _movementComponent.OnMovementStop -= OnMovementStop;
+            _movementComponent.OnTurn -= OnTurn;
+        }
+
+        private void OnTurn(CardinalDirection direction)
+        {
+            _renderer.UpdateToIdle(direction);
         }
 
         private void OnMovementStop()
