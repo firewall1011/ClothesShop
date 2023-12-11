@@ -12,11 +12,17 @@ namespace ClothesShop.Character
         public event Action<Vector2> OnMoveCommand = delegate { };
         
         /// <summary>
+        /// Invoked at interaction input
+        /// </summary>
+        public event Action OnInteractionCommand = delegate { };
+        
+        /// <summary>
         /// Returns normalized movement direction
         /// </summary>
         /// <returns></returns>
         public abstract Vector2 GetMoveDirection();
         
         protected void InvokeMoveCommand(Vector2 moveDirection) => OnMoveCommand(moveDirection);
+        protected void InvokeInteractionCommand() => OnInteractionCommand();
     }
 }

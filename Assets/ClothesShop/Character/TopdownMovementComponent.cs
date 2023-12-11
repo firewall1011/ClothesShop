@@ -9,6 +9,9 @@ namespace ClothesShop.Character
         public event Action<CardinalDirection> OnMovementStart = delegate {  };
         public event Action OnMovementStop = delegate {  };
         
+        public CardinalDirection CurrentLookDirection { get; private set; } = CardinalDirection.None;
+        public Vector2 GridPosition => _gridPosition;
+        
         [SerializeField] private float _speed;
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private Controller2D _controller;
@@ -54,7 +57,8 @@ namespace ClothesShop.Character
         {
             _targetPos = GetTargetPosition();
             _lerpAmount = 0f;
-            OnMovementStart(_lastMoveIntent);
+            CurrentLookDirection = _lastMoveIntent;
+            OnMovementStart(CurrentLookDirection);
         }
         
         private Vector2Int GetTargetPosition() => (_gridPosition + _lastMoveIntent.ToVector2()).RoundToInt();
