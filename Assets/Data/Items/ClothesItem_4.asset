@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Purple Robes
   _displaySprite: {fileID: -130910050, guid: 8a58c44705b4b7f4e8b778ec293f8781, type: 3}
   _animationData: {fileID: 11400000, guid: f4cd7a362ba306a4988172e978ae489f, type: 2}
+  _layer: 1

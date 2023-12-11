@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Eagle Helmet
   _displaySprite: {fileID: 789762218, guid: 127a3637e9f6c9d43b4a4ebf7cb43873, type: 3}
   _animationData: {fileID: 11400000, guid: 529f4772ab22c954a9192b9ec0189a0d, type: 2}
+  _layer: 2

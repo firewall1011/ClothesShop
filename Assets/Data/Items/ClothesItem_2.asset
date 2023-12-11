@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Brown Clothes
   _displaySprite: {fileID: -671980927, guid: 265a52d17d19d09439bbb344b03be564, type: 3}
   _animationData: {fileID: 11400000, guid: aa57a194e1d88e74ab212d1ef0407fcd, type: 2}
+  _layer: 1

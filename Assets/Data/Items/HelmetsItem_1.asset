@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Shell Helmet
   _displaySprite: {fileID: -604217536, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
   _animationData: {fileID: 11400000, guid: 6502810b83b83664786ec803d0965f26, type: 2}
+  _layer: 2

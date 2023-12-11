@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Brown Robes
   _displaySprite: {fileID: 103205800, guid: ce5005c58aded664ab35c221d1529683, type: 3}
   _animationData: {fileID: 11400000, guid: 4f8b43d7ebbff544086103c2689896a0, type: 2}
+  _layer: 1

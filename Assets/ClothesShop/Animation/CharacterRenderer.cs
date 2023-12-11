@@ -1,13 +1,16 @@
 ﻿using System;
+using System.Linq;
+using ClothesShop.Dressing;
 using UnityEngine;
 
 namespace ClothesShop.Animation
 {
     [Serializable]
-    internal struct DataRendererPair
+    internal class DataRenderer
     {
-        public SpriteAnimationData Data;
+        public ClothesLayer Layer;
         public SpriteRenderer Renderer;
+        public SpriteAnimationData Data;
 
         public void Deconstruct(out SpriteAnimationData data, out SpriteRenderer renderer)
         {
@@ -19,7 +22,20 @@ namespace ClothesShop.Animation
     internal class CharacterRenderer : MonoBehaviour
     {
         [SerializeField, Min(0)] private int _idleFrameIndex;
-        [SerializeField] private DataRendererPair[] _renderers;
+        [SerializeField] private DataRenderer[] _renderers;
+
+        public void UpdateRenderers(Mannequin mannequin)
+        {
+            var rendererData = _renderers.FirstOrDefault(data => data.Layer == ClothesLayer.Clothe);
+            if (rendererData != null) 
+                rendererData.Data = mannequin.ClotheItem.AnimationData;
+
+            rendererData = _renderers.FirstOrDefault(data => data.Layer == ClothesLayer.Helmet);
+            if (rendererData != null) 
+                rendererData.Data = mannequin.HelmetItem.AnimationData;
+            
+            UpdateToIdle(CardinalDirection.South);
+        }
         
         public void UpdateSprite(CardinalDirection direction, int frameIndex)
         {

@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Horned Helmet
   _displaySprite: {fileID: 1184866629, guid: 26c44d8575a46a5449dee89d44113159, type: 3}
   _animationData: {fileID: 11400000, guid: a4fbfacc2033c5348987ab5908ed138c, type: 2}
+  _layer: 2

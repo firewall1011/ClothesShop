@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Reaper Clothes
   _displaySprite: {fileID: 743545647, guid: 8bdf2d769475261478e0b99c07d4c335, type: 3}
   _animationData: {fileID: 11400000, guid: 716928be57f46084b93f68678f076c91, type: 2}
+  _layer: 1

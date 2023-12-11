@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df78fbf107657394abb601070a6789b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialAmount: 10
+  _initialAmount: 300
 --- !u!114 &8076445944334730212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,12 +219,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _idleFrameIndex: 1
   _renderers:
-  - Data: {fileID: 11400000, guid: 2520c7a0d5d5c82429572745b97e6125, type: 2}
+  - Layer: 0
     Renderer: {fileID: 6444505826039661600}
-  - Data: {fileID: 11400000, guid: aa57a194e1d88e74ab212d1ef0407fcd, type: 2}
+    Data: {fileID: 11400000, guid: 2520c7a0d5d5c82429572745b97e6125, type: 2}
+  - Layer: 1
     Renderer: {fileID: 8802622312747251935}
-  - Data: {fileID: 11400000, guid: 6502810b83b83664786ec803d0965f26, type: 2}
+    Data: {fileID: 11400000, guid: aa57a194e1d88e74ab212d1ef0407fcd, type: 2}
+  - Layer: 2
     Renderer: {fileID: 4053659901731293758}
+    Data: {fileID: 11400000, guid: 6502810b83b83664786ec803d0965f26, type: 2}
 --- !u!50 &452811436222689726 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 5427396170888377597, guid: abc6be08b75e42740b4fdfabcde1429a, type: 3}

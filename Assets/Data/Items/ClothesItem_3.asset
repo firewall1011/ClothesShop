@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Purple Clothes
   _displaySprite: {fileID: -507137750, guid: f03b45007db8c0e40a56ca100ceaef3a, type: 3}
   _animationData: {fileID: 11400000, guid: 68539a94bc989f541a588a2975f43388, type: 2}
+  _layer: 1

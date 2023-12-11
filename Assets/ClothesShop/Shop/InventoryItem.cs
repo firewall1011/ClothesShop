@@ -1,4 +1,5 @@
 ﻿using ClothesShop.Animation;
+using ClothesShop.Dressing;
 using UnityEngine;
 
 namespace ClothesShop.Shop
@@ -10,10 +11,12 @@ namespace ClothesShop.Shop
         [SerializeField] private string _displayName;
         [SerializeField] private Sprite _displaySprite;
         [SerializeField] private SpriteAnimationData _animationData;
+        [SerializeField] private ClothesLayer _layer;
         
         public Currency Price => new(_price);
         public string DisplayName => _displayName;
         public Sprite DisplaySprite => _displaySprite;
         public SpriteAnimationData AnimationData => _animationData;
+        public ClothesLayer Layer => _layer;
     }
 }

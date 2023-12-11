@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Top Hat
   _displaySprite: {fileID: 1901375833, guid: 32b2f8a2c808a73458e5db536024b552, type: 3}
   _animationData: {fileID: 11400000, guid: 1a7201133fb703f499ac71674365d589, type: 2}
+  _layer: 2

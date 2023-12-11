@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Reaper Robes
   _displaySprite: {fileID: -1998054068, guid: 89cbaae5c5712384280616bb3e0e8a1e, type: 3}
   _animationData: {fileID: 11400000, guid: be053ded5aab5c64bac75af4f4a46207, type: 2}
+  _layer: 1

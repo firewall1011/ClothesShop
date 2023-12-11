@@ -16,3 +16,4 @@ MonoBehaviour:
   _displayName: Skull Helmet
   _displaySprite: {fileID: -1560915185, guid: 7ae79cc76ec830342a9b2ae6607ece1c, type: 3}
   _animationData: {fileID: 11400000, guid: e19877ac12f59a94293570ec96c349b1, type: 2}
+  _layer: 2

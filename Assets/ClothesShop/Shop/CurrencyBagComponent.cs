@@ -5,17 +5,17 @@ namespace ClothesShop.Shop
     public class CurrencyBagComponent : MonoBehaviour
     {
         [SerializeField, Min(0)] private int _initialAmount;
-        
-        private Currency _currency;
+
+        public Currency Currency { get; private set; }
 
         private void Awake()
         {
-            _currency = new Currency(_initialAmount);
+            Currency = new Currency(_initialAmount);
         }
 
         public bool CanSpend(Currency amount)
         {
-            return _currency >= amount;
+            return Currency >= amount;
         }
 
         public bool TrySpend(Currency amount)
@@ -23,13 +23,13 @@ namespace ClothesShop.Shop
             if (!CanSpend(amount))
                 return false;
 
-            _currency -= amount;
+            Currency -= amount;
             return true;
         }
 
         public void AddCurrency(Currency amount)
         {
-            _currency += amount;
+            Currency += amount;
         }
     }
 }
