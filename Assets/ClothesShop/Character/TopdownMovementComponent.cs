@@ -23,7 +23,7 @@ namespace ClothesShop.Character
         /// </summary>
         public event Action OnMovementStop = delegate {  };
         
-        public CardinalDirection CurrentLookDirection { get; private set; } = CardinalDirection.None;
+        public CardinalDirection CurrentLookDirection { get; private set; } = CardinalDirection.South;
         public Vector2 GridPosition => _gridPosition;
         
         [Header("References")]

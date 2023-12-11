@@ -21,5 +21,25 @@ namespace ClothesShop.Animation
                 _ => _southSprites
             };
         }
+
+        public void SetSouthSprites(Sprite[] sprites)
+        {
+            _southSprites = sprites;
+        }
+        
+        public void SetNorthSprites(Sprite[] sprites)
+        {
+            _northSprites = sprites;
+        }
+        
+        public void SetEastSprites(Sprite[] sprites)
+        {
+            _eastSprites = sprites;
+        }
+        
+        public void SetWestSprites(Sprite[] sprites)
+        {
+            _westSprites = sprites;
+        }
     }
 }
