@@ -1,7 +1,9 @@
-﻿namespace ClothesShop.Character
+﻿using UnityEngine;
+
+namespace ClothesShop
 {
     public interface IInteractable
     {
-        void Interact();
+        void Interact(GameObject instigator);
     }
 }
