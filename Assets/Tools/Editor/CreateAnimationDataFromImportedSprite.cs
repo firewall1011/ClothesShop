@@ -49,10 +49,10 @@ namespace ClothesShop.Tools
                 AssetDatabase.CreateAsset(asset, path);
             }
 
-            asset.SetSouthSprites(sprites[..3]);
-            asset.SetWestSprites(sprites[3..6]);
-            asset.SetEastSprites(sprites[6..9]);
-            asset.SetNorthSprites(sprites[9..12]);
+            asset.SetSouthSprites(new[] {sprites[0], sprites[1], sprites[2], sprites[1]});
+            asset.SetWestSprites(new[] {sprites[3], sprites[4], sprites[5], sprites[4]});
+            asset.SetEastSprites(new[] {sprites[6], sprites[7], sprites[8], sprites[7]});
+            asset.SetNorthSprites(new[] {sprites[9], sprites[10], sprites[11], sprites[10]});
             
             EditorUtility.SetDirty(asset);
             AssetDatabase.SaveAssetIfDirty(asset);

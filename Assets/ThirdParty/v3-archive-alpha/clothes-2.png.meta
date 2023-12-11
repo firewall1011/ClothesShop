@@ -378,7 +378,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      clothes-1-robe_6: 403576877
+      clothes-1-robe_0: 1093834066
       clothes-1-robe_7: -1391016622
       clothes-1-robe_4: -581919884
       clothes-1-robe_9: -255899433
@@ -387,9 +387,9 @@ TextureImporter:
       clothes-1-robe_8: 807233560
       clothes-1-robe_11: 325320353
       clothes-1-robe_10: -291432045
-      clothes-1-robe_1: 103205800
       clothes-1-robe_3: -1566801299
-      clothes-1-robe_0: 1093834066
+      clothes-1-robe_1: 103205800
+      clothes-1-robe_6: 403576877
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
