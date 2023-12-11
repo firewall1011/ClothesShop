@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ClothesShop.Animation
 {
-    [CreateAssetMenu(fileName = "SpriteAnimationData", menuName = "ClothesShop/AnimationData")]
+    [CreateAssetMenu(fileName = "Create " + nameof(SpriteAnimationData), menuName = "ClothesShop/AnimationData")]
     public class SpriteAnimationData : ScriptableObject
     {
         [SerializeField] private Sprite[] _southSprites;
