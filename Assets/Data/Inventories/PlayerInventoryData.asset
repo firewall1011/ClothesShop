@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PlayerInventoryData
   m_EditorClassIdentifier: 
   <Items>k__BackingField:
-  - {fileID: 11400000, guid: fce6935ee90743942a4c0f45d59aa369, type: 2}
+  - {fileID: 11400000, guid: 8bd111ee4a1656344bd983a8f92a68fb, type: 2}
   - {fileID: 11400000, guid: fe21f1582ee96854f9a1387fd7ea1b05, type: 2}
