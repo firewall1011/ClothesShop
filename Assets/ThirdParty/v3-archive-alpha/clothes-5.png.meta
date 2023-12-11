@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 127a3637e9f6c9d43b4a4ebf7cb43873
+guid: 8bdf2d769475261478e0b99c07d4c335
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: helmets-5_0
+      name: clothes-3-normal_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4512af7c78da1634ba4e3e6c6ee254d9
-      internalID: 1752159930
+      spriteID: 2c043d262122c20419f843f6e040fc14
+      internalID: -663061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_1
+      name: clothes-3-normal_1
       rect:
         serializedVersion: 2
         x: 16
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc48be2c649590448858dd168ba7214e
-      internalID: 789762218
+      spriteID: 034b677db8519bb4b9fe5dc1b76be46a
+      internalID: 743545647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_2
+      name: clothes-3-normal_2
       rect:
         serializedVersion: 2
         x: 32
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eff975e76f2a66468d312e362664b64
-      internalID: 1908388282
+      spriteID: f9337686244d57a45a1df01102488036
+      internalID: -1552494216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_3
+      name: clothes-3-normal_3
       rect:
         serializedVersion: 2
         x: 0
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1727975d44edfc141ac70de5c7b2e84c
-      internalID: -1266719928
+      spriteID: 9ac7ab5d3f2faad4ea18c27c0d00b9f2
+      internalID: 1718272464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_4
+      name: clothes-3-normal_4
       rect:
         serializedVersion: 2
         x: 16
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5807d643f107d8148916f3bb6fdf16ba
-      internalID: 367493680
+      spriteID: ebc69fca9606b1e4098fa316cc8b88ed
+      internalID: -1617538501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_5
+      name: clothes-3-normal_5
       rect:
         serializedVersion: 2
         x: 32
@@ -235,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb89f28c604fc1b4b96dc3a1694e97e1
-      internalID: -1338541264
+      spriteID: de85431f5c426e640ab997c2ef61575d
+      internalID: 89640370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_6
+      name: clothes-3-normal_6
       rect:
         serializedVersion: 2
         x: 0
@@ -256,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87a87617c973b0d4181ff14e8a877af0
-      internalID: -1222669159
+      spriteID: d556ff4d7033b024188a516b1a272295
+      internalID: 947117658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_7
+      name: clothes-3-normal_7
       rect:
         serializedVersion: 2
         x: 16
@@ -277,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b88d0179cbe67649b9d6f2dc4af2c02
-      internalID: 12224864
+      spriteID: be3945ecae50bf845984db7b5f017ca3
+      internalID: 1540258865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_8
+      name: clothes-3-normal_8
       rect:
         serializedVersion: 2
         x: 32
@@ -298,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 486712f2866ad6142b84141f441bce91
-      internalID: -1787393214
+      spriteID: e7a84005e3b376441a499db653d968b0
+      internalID: -37642320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_9
+      name: clothes-3-normal_9
       rect:
         serializedVersion: 2
         x: 0
@@ -319,14 +319,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d87e36a833a087b4cb7594d63f3a790b
-      internalID: 1187228517
+      spriteID: 916db41a85bdd0e46ad984f24e851312
+      internalID: -229695433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_10
+      name: clothes-3-normal_10
       rect:
         serializedVersion: 2
         x: 16
@@ -340,14 +340,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0b355a25f70cde419f0b05e5f608851
-      internalID: 1025070347
+      spriteID: df08fb7710a5430419a2cd710917629f
+      internalID: 747983045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: helmets-5_11
+      name: clothes-3-normal_11
       rect:
         serializedVersion: 2
         x: 32
@@ -361,8 +361,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cb3792b4140a4a4398b3bb5a8a45943
-      internalID: -1883952624
+      spriteID: 47208001a0c22354b97571c811f039a2
+      internalID: 1969340600
       vertices: []
       indices: 
       edges: []
@@ -378,18 +378,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      helmets-5_1: 789762218
-      helmets-5_9: 1187228517
-      helmets-5_2: 1908388282
-      helmets-5_7: 12224864
-      helmets-5_0: 1752159930
-      helmets-5_4: 367493680
-      helmets-5_3: -1266719928
-      helmets-5_5: -1338541264
-      helmets-5_10: 1025070347
-      helmets-5_8: -1787393214
-      helmets-5_11: -1883952624
-      helmets-5_6: -1222669159
+      clothes-3-normal_6: 947117658
+      clothes-3-normal_5: 89640370
+      clothes-3-normal_7: 1540258865
+      clothes-3-normal_3: 1718272464
+      clothes-3-normal_8: -37642320
+      clothes-3-normal_9: -229695433
+      clothes-3-normal_11: 1969340600
+      clothes-3-normal_10: 747983045
+      clothes-3-normal_2: -1552494216
+      clothes-3-normal_0: -663061
+      clothes-3-normal_4: -1617538501
+      clothes-3-normal_1: 743545647
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

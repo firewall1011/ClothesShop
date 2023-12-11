@@ -124,14 +124,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d4abe38a1e7be54cb6607393ae570ee
-      internalID: -2006450421
+      spriteID: 12d1cb28e8529e542b8da1e28bf83ec6
+      internalID: -1801992759
       vertices: []
       indices: 
       edges: []
@@ -145,14 +145,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcc7d6983aec1774aa2e0cab2fc6a222
-      internalID: 1584399344
+      spriteID: ffac2329c7eaac44e8a06218273fee8a
+      internalID: -2108345701
       vertices: []
       indices: 
       edges: []
@@ -166,77 +166,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c895a6ce86cdbb843831e990e9d0d4b0
-      internalID: -1052383195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1beff5609e2bc60458bb9f454db648a3
-      internalID: 2091124313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbda0e59726781343934579dc37c5e7d
-      internalID: -995160621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 774c6337ea95b1646bf74deec887e069
-      internalID: 1902405351
+      spriteID: c56c5543240a86e4a9b19bd69b154011
+      internalID: -870164827
       vertices: []
       indices: 
       edges: []
@@ -250,14 +187,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41fb924e349a068418fe68b1fd6b6251
-      internalID: 1704590861
+      spriteID: 9c3f1f476696bd344b18a2dd7d594038
+      internalID: 1485989872
       vertices: []
       indices: 
       edges: []
@@ -271,14 +208,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70708de88b19bf343b3689d97b23c94f
-      internalID: 2036851731
+      spriteID: 639e916fd1f1a214288854aee82b5016
+      internalID: -938582897
       vertices: []
       indices: 
       edges: []
@@ -292,77 +229,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee4fdde8f048eb4ba5ac8283c308c61
-      internalID: 1110698299
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_9
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4e8659600ce2d849890c0e97abcff1a
-      internalID: -1590397173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ad2b73b2a7d42c4cb3bf0207ecd88c7
-      internalID: -1035296247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_11
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1fe081ad44eed146a120ecb0ac8a3c8
-      internalID: 622278447
+      spriteID: 21e220a3107267249927888966592310
+      internalID: -1439612904
       vertices: []
       indices: 
       edges: []
@@ -376,14 +250,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91bd3d591c262e74080bebc1de462066
-      internalID: 1191637193
+      spriteID: 39631f2a3d2dff94abdc53579d305775
+      internalID: -659254705
       vertices: []
       indices: 
       edges: []
@@ -397,14 +271,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20e3a9e37370ec447938e2699cb30a48
-      internalID: -333516273
+      spriteID: 4331097b2122c9e4fb15abe61583cafe
+      internalID: 2108166748
       vertices: []
       indices: 
       edges: []
@@ -418,77 +292,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb6f68c45df5164a9f38240f7566fe9
-      internalID: 910764736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_15
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 775bc0acc2ec6f64691eeb0363080c34
-      internalID: 1722848575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_16
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33cf668c1ba8e5842a3041f6d06e9b9e
-      internalID: 1416762193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_17
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89577a3acc2b0b344bbab6cedcc3fa58
-      internalID: -1022997795
+      spriteID: 4b820061707327b43a2bf15ca53c0dc9
+      internalID: 1541586638
       vertices: []
       indices: 
       edges: []
@@ -502,14 +313,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b49e7e19bd4c4a84ebaf576fdc1765dd
-      internalID: 621595711
+      spriteID: 059296aa338787c43afcf8af5697c57b
+      internalID: -64738063
       vertices: []
       indices: 
       edges: []
@@ -523,14 +334,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16f4dc182e2c73b4f94b90ead633551d
-      internalID: -1861909055
+      spriteID: 22677e717bd5df44cb6aa346b59ede10
+      internalID: 1725902154
       vertices: []
       indices: 
       edges: []
@@ -544,77 +355,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59e30293800b8ee43a52446a80c951b9
-      internalID: 240872486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_21
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c7a66c8a91ac5b45ad8a4247080ccd1
-      internalID: -1854461364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_22
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07997b19d25d94549a881b2367b5e369
-      internalID: 445295590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: race-human-base-01_23
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd755b1b26b81b74ca71fd97c95efb1c
-      internalID: -1331884917
+      spriteID: fae8588448f10ce49a5da2d9afdd5c79
+      internalID: -1222936944
       vertices: []
       indices: 
       edges: []
@@ -630,30 +378,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      race-human-base-01_1: 1584399344
-      race-human-base-01_11: 622278447
-      race-human-base-01_12: 1191637193
-      race-human-base-01_2: -1052383195
-      race-human-base-01_4: -995160621
-      race-human-base-01_20: 240872486
-      race-human-base-01_8: 1110698299
-      race-human-base-01_9: -1590397173
-      race-human-base-01_21: -1854461364
-      race-human-base-01_0: -2006450421
-      race-human-base-01_3: 2091124313
-      race-human-base-01_10: -1035296247
-      race-human-base-01_15: 1722848575
-      race-human-base-01_5: 1902405351
-      race-human-base-01_19: -1861909055
-      race-human-base-01_23: -1331884917
-      race-human-base-01_22: 445295590
-      race-human-base-01_18: 621595711
-      race-human-base-01_17: -1022997795
-      race-human-base-01_6: 1704590861
-      race-human-base-01_16: 1416762193
-      race-human-base-01_13: -333516273
-      race-human-base-01_14: 910764736
-      race-human-base-01_7: 2036851731
+      race-human-base-01_1: -2108345701
+      race-human-base-01_11: 2115671856
+      race-human-base-01_12: -659254705
+      race-human-base-01_2: -870164827
+      race-human-base-01_4: 32353598
+      race-human-base-01_20: -1222936944
+      race-human-base-01_8: -1439612904
+      race-human-base-01_9: -772637862
+      race-human-base-01_21: -1797339818
+      race-human-base-01_0: -1801992759
+      race-human-base-01_3: 1567572540
+      race-human-base-01_10: -394199541
+      race-human-base-01_15: -541059702
+      race-human-base-01_5: -1173667460
+      race-human-base-01_19: 1725902154
+      race-human-base-01_23: 1294523416
+      race-human-base-01_22: -1661670747
+      race-human-base-01_18: -64738063
+      race-human-base-01_17: -1798572718
+      race-human-base-01_6: 1485989872
+      race-human-base-01_16: -884392170
+      race-human-base-01_13: 2108166748
+      race-human-base-01_14: 1541586638
+      race-human-base-01_7: -938582897
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
