@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,11 +13,12 @@ namespace ClothesShop.Shop
         [SerializeField] private TextMeshProUGUI _currentCurrencyTxt;
         
         private InventoryComponent _client;
+        private Action _onClose = delegate {  };
 
         private void Awake() => _closeButton.onClick.AddListener(Close);
         private void OnDestroy() => _closeButton.onClick.RemoveListener(Close);
 
-        public void Open(InventoryData inventory)
+        public void Open(InventoryData inventory, Action onClose)
         {
             foreach (var item in inventory.Items)
             {
@@ -24,6 +26,8 @@ namespace ClothesShop.Shop
                 itemUI.SetItem(item);
                 itemUI.SetClient(_client);
             }
+
+            _onClose = onClose;
         }
 
         public void SetClient(InventoryComponent client)
@@ -33,6 +37,7 @@ namespace ClothesShop.Shop
         
         public void Close()
         {
+            _onClose();
             Destroy(gameObject);
         }
 

@@ -1,3 +1,4 @@
+using ClothesShop.Character;
 using UnityEngine;
 
 namespace ClothesShop.Shop
@@ -8,9 +9,10 @@ namespace ClothesShop.Shop
 
         public void Interact(GameObject instigator)
         {
-            if (instigator.TryGetComponent(out InventoryComponent inventoryComp))
+            if (instigator.TryGetComponent(out InventoryComponent inventoryComp) && instigator.TryGetComponent(out Controller2D controller))
             {
-                _shop.Open(inventoryComp);
+                _shop.Open(inventoryComp, () => controller.EnableActions());
+                controller.DisableActions();
             }
         }
     }

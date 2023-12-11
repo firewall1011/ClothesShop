@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using ClothesShop.Animation;
 using ClothesShop.Shop;
 using UnityEngine;
@@ -11,8 +12,9 @@ namespace ClothesShop.Dressing
         [SerializeField] private Mannequin _mannequin;
         
         private InventoryComponent _inventory;
+        private Action _onCloseAction = delegate {  };
         
-        public void Open(InventoryComponent inventory)
+        public void Open(InventoryComponent inventory, Action onClose)
         {
             foreach (var item in inventory.Data.Items)
             {
@@ -31,6 +33,7 @@ namespace ClothesShop.Dressing
             }
 
             _inventory = inventory;
+            _onCloseAction = onClose;
         }
 
         public void Close()
@@ -39,6 +42,8 @@ namespace ClothesShop.Dressing
             {
                 characterRenderer.UpdateRenderers(_mannequin);
             }
+
+            _onCloseAction();
             Destroy(gameObject);
         }
     }

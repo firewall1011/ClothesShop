@@ -1,3 +1,4 @@
+using ClothesShop.Character;
 using ClothesShop.Shop;
 using UnityEngine;
 
@@ -9,10 +10,12 @@ namespace ClothesShop.Dressing
         
         public void Interact(GameObject instigator)
         {
-            if (instigator.TryGetComponent(out InventoryComponent inventory))
+            if (instigator.TryGetComponent(out InventoryComponent inventory) && instigator.TryGetComponent(out Controller2D controller))
             {
                 var uiInstance = Instantiate(_uiPrefab);
-                uiInstance.Open(inventory);
+                
+                uiInstance.Open(inventory, () => controller.EnableActions());
+                controller.DisableActions();
             }
         }
     }

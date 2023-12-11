@@ -31,5 +31,15 @@ namespace ClothesShop.Character
         }
 
         public override Vector2 GetMoveDirection() => _currentMoveDirection;
+        
+        public override void EnableActions()
+        {
+            _playerInputActions.Enable();
+        }
+
+        public override void DisableActions()
+        {
+            _playerInputActions.Disable();
+        }
     }
 }

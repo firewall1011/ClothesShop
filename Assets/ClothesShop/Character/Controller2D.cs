@@ -21,6 +21,9 @@ namespace ClothesShop.Character
         /// </summary>
         /// <returns></returns>
         public abstract Vector2 GetMoveDirection();
+
+        public abstract void EnableActions();
+        public abstract void DisableActions();
         
         protected void InvokeMoveCommand(Vector2 moveDirection) => OnMoveCommand(moveDirection);
         protected void InvokeInteractionCommand() => OnInteractionCommand();

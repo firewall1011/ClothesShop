@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace ClothesShop.Shop
 {
@@ -10,16 +11,11 @@ namespace ClothesShop.Shop
 
         private ShopUI _shopInstance;
         
-        public void Open(InventoryComponent clientInventory)
+        public void Open(InventoryComponent clientInventory, Action onClose)
         {
             _shopInstance = Instantiate(_shopUIPrefab);
             _shopInstance.SetClient(clientInventory);
-            _shopInstance.Open(_inventory);
-        }
-
-        public void Close()
-        {
-            _shopInstance.Close();
+            _shopInstance.Open(_inventory, onClose);
         }
     }
 }
