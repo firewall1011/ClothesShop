@@ -4,11 +4,11 @@ namespace ClothesShop.Shop
 {
     public class Currency : IComparable<Currency>, IEquatable<Currency>
     {
-        private readonly int _amount;
+        public readonly int Amount;
         
         public Currency(int amount)
         {
-            _amount = amount switch
+            Amount = amount switch
             {
                 < 0 => throw new ArgumentOutOfRangeException(nameof(amount), "Cannot create negative amount Currency"),
                 _ => amount
@@ -17,46 +17,46 @@ namespace ClothesShop.Shop
         
         public static Currency operator +(Currency lhs, Currency rhs)
         {
-            return new Currency(lhs._amount + rhs._amount);
+            return new Currency(lhs.Amount + rhs.Amount);
         }
 
         public static Currency operator -(Currency lhs, Currency rhs)
         {
-            return new Currency(lhs._amount - rhs._amount);
+            return new Currency(lhs.Amount - rhs.Amount);
         }
 
         public static bool operator <(Currency lhs, Currency rhs)
         {
-            return lhs._amount < rhs._amount;
+            return lhs.Amount < rhs.Amount;
         }
 
         public static bool operator >(Currency lhs, Currency rhs)
         {
-            return lhs._amount > rhs._amount;
+            return lhs.Amount > rhs.Amount;
         }
         
         public static bool operator <=(Currency lhs, Currency rhs)
         {
-            return lhs._amount <= rhs._amount;
+            return lhs.Amount <= rhs.Amount;
         }
 
         public static bool operator >=(Currency lhs, Currency rhs)
         {
-            return lhs._amount >= rhs._amount;
+            return lhs.Amount >= rhs.Amount;
         }
 
         public int CompareTo(Currency other)
         {
             if (ReferenceEquals(this, other)) return 0;
             if (ReferenceEquals(null, other)) return 1;
-            return _amount.CompareTo(other._amount);
+            return Amount.CompareTo(other.Amount);
         }
 
         public bool Equals(Currency other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
-            return _amount == other._amount;
+            return Amount == other.Amount;
         }
 
         public override bool Equals(object obj)
@@ -69,7 +69,7 @@ namespace ClothesShop.Shop
 
         public override int GetHashCode()
         {
-            return _amount;
+            return Amount;
         }
     }
 }
