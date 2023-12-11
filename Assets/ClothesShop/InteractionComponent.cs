@@ -17,7 +17,7 @@ namespace ClothesShop
         {
             _controller.OnInteractionCommand += Interact;
         }
-        
+
         private void OnDisable()
         {
             _controller.OnInteractionCommand -= Interact;
@@ -32,9 +32,9 @@ namespace ClothesShop
             if (result == null)
                 return;
 
-            if (result.TryGetComponent(out IInteractable target))
+            if (result.attachedRigidbody.TryGetComponent(out IInteractable target))
             {
-                target.Interact();
+                target.Interact(gameObject);
             }
         }
     }

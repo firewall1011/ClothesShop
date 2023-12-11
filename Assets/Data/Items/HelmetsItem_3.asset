@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e565e90137a94dfca0e3d6848779870d, type: 3}
+  m_Name: HelmetsItem_3
+  m_EditorClassIdentifier: 
+  _price: 10
+  _displayName: Protective Helmet
+  _displaySprite: {fileID: -1483139260, guid: b0db97c7bf993af46804e7948c4db88f, type: 3}
+  _animationData: {fileID: 11400000, guid: 9318f7c7f7ce9d448af891d6fe09456d, type: 2}
+  _layer: 2

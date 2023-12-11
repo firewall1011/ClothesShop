@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0215ded90e93904890bbe768aea7285, type: 3}
+  m_Name: helmetsAnimationData_1
+  m_EditorClassIdentifier: 
+  _southSprites:
+  - {fileID: 221285948, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: -604217536, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: 270389217, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: -604217536, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  _northSprites:
+  - {fileID: 1495998719, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: 1217160051, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: -226478240, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: 1217160051, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  _eastSprites:
+  - {fileID: -1398464049, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: -2133602378, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: -1042239635, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: -2133602378, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  _westSprites:
+  - {fileID: -869859833, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: -854959723, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: 641420091, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  - {fileID: -854959723, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}

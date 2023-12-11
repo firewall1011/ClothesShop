@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e565e90137a94dfca0e3d6848779870d, type: 3}
+  m_Name: HelmetsItem_1
+  m_EditorClassIdentifier: 
+  _price: 1
+  _displayName: Shell Helmet
+  _displaySprite: {fileID: -604217536, guid: 56cc718ad92d4c14b9b943a348f32418, type: 3}
+  _animationData: {fileID: 11400000, guid: 6502810b83b83664786ec803d0965f26, type: 2}
+  _layer: 2

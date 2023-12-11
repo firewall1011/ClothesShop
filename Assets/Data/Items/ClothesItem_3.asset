@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e565e90137a94dfca0e3d6848779870d, type: 3}
+  m_Name: ClothesItem_3
+  m_EditorClassIdentifier: 
+  _price: 10
+  _displayName: Purple Clothes
+  _displaySprite: {fileID: -507137750, guid: f03b45007db8c0e40a56ca100ceaef3a, type: 3}
+  _animationData: {fileID: 11400000, guid: 68539a94bc989f541a588a2975f43388, type: 2}
+  _layer: 1

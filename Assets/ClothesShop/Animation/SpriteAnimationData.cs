@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ClothesShop.Animation
 {
-    [CreateAssetMenu(fileName = "SpriteAnimationData", menuName = "ClothesShop/AnimationData")]
+    [CreateAssetMenu(fileName = "Create " + nameof(SpriteAnimationData), menuName = "ClothesShop/AnimationData")]
     public class SpriteAnimationData : ScriptableObject
     {
         [SerializeField] private Sprite[] _southSprites;
@@ -20,6 +20,26 @@ namespace ClothesShop.Animation
                 CardinalDirection.West => _westSprites,
                 _ => _southSprites
             };
+        }
+
+        public void SetSouthSprites(Sprite[] sprites)
+        {
+            _southSprites = sprites;
+        }
+        
+        public void SetNorthSprites(Sprite[] sprites)
+        {
+            _northSprites = sprites;
+        }
+        
+        public void SetEastSprites(Sprite[] sprites)
+        {
+            _eastSprites = sprites;
+        }
+        
+        public void SetWestSprites(Sprite[] sprites)
+        {
+            _westSprites = sprites;
         }
     }
 }

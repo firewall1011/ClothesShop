@@ -19,7 +19,12 @@ namespace ClothesShop.Animation
             _movementComponent.OnMovementStop += OnMovementStop;
             _movementComponent.OnTurn += OnTurn;
         }
-        
+
+        private void Start()
+        {
+            _renderer.UpdateToIdle(_movementComponent.CurrentLookDirection);
+        }
+
         private void OnDisable()
         {
             _movementComponent.OnMovementStop -= OnMovementStop;
